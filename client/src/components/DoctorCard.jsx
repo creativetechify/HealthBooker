@@ -7,12 +7,12 @@ const DoctorCard = ({ ele }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [token, setToken] = useState(localStorage.getItem("token") || "");
 
-const handleModal=()=>{
-  if(token==""){
-    return toast.error('You must log in first')
-  }
-  setModalOpen(true)
-}
+  const handleModal = () => {
+    if (token == "") {
+      return toast.error("You must log in first");
+    }
+    setModalOpen(true);
+  };
 
   return (
     <div className={`card`}>
@@ -37,24 +37,16 @@ const handleModal=()=>{
         {ele?.experience}yrs
       </p>
       <p className="fees">
-        <strong>Fees per consultation: </strong>$ {ele?.fees}
+        <strong>Fees per consultation: </strong>₹ {ele?.fees}
       </p>
       <p className="phone">
         <strong>Phone: </strong>
         {ele?.userId?.mobile}
       </p>
-      <button
-        className="btn appointment-btn"
-        onClick={handleModal}
-      >
+      <button className="btn appointment-btn" onClick={handleModal}>
         Book Appointment
       </button>
-      {modalOpen && (
-        <BookAppointment
-          setModalOpen={setModalOpen}
-          ele={ele}
-        />
-      )}
+      {modalOpen && <BookAppointment setModalOpen={setModalOpen} ele={ele} />}
     </div>
   );
 };

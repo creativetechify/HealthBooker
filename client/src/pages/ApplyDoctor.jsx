@@ -82,15 +82,11 @@ const ApplyDoctor = () => {
               type="number"
               name="fees"
               className="form-input"
-              placeholder="Enter your fees  (in dollars)"
+              placeholder="Enter your fees  (in rupees)"
               value={formDetails.fees}
               onChange={inputChange}
             />
-            <button
-              type="submit"
-              className="btn form-btn"
-              onClick={btnClick}
-            >
+            <button type="submit" className="btn form-btn" onClick={btnClick}>
               apply
             </button>
           </form>
