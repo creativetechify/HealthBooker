@@ -17,15 +17,12 @@ const Contact = () => {
   };
 
   return (
-    <section
-      className="register-section flex-center"
-      id="contact"
-    >
+    <section className="register-section flex-center" id="contact">
       <div className="contact-container flex-center contact">
         <h2 className="form-heading">Contact Us</h2>
         <form
+          action="https://formsubmit.co/learnwithfun4567@gmail.com"
           method="POST"
-          action="https://formspree.io/f/xkneldwn"
           className="register-form "
         >
           <input
@@ -55,10 +52,7 @@ const Contact = () => {
             cols="12"
           ></textarea>
 
-          <button
-            type="submit"
-            className="btn form-btn"
-          >
+          <button type="submit" className="btn form-btn">
             send
           </button>
         </form>
