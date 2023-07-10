@@ -7,20 +7,13 @@ const Hero = () => {
     <section className="hero">
       <div className="hero-content">
         <h1>
-          Your Health, <br />
-          Our Responsibility
+          Spiritual Healing <br />
+          by Dr.Dhanesh
         </h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-          tenetur doloremque molestias repellat minus asperiores in aperiam
-          dolor, quaerat praesentium.
-        </p>
+        <p>time being ok . change on next times</p>
       </div>
       <div className="hero-img">
-        <img
-          src={image}
-          alt="hero"
-        />
+        <img src={image} alt="hero" />
       </div>
     </section>
   );
