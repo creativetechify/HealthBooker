@@ -10,7 +10,14 @@ const Hero = () => {
           Spiritual Healing <br />
           by Dr.Dhanesh
         </h1>
-        <p>time being ok . change on next times</p>
+        <p>
+          Welcome to our website! At Spiritual Healing by Dhanesh , we are
+          dedicated to providing you with the highest quality holistic
+          healthcare options. One of the effective modalities we offer is
+          Craniosacral Therapy (CST). In this article, we will delve into the
+          intricacies of CST, exploring its principles, benefits, and how it can
+          enhance your overall well-being.
+        </p>
       </div>
       <div className="hero-img">
         <img src={image} alt="hero" />

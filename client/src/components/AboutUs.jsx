@@ -12,13 +12,15 @@ const AboutUs = () => {
           </div>
           <div className="hero-content">
             <p>
-              Welcome to our website! At [Spiritual Healing by Dhanesh or Logo
-              Name can be use ], we are dedicated to providing you with the
-              highest quality holistic healthcare options. One of the effective
-              modalities we offer is Craniosacral Therapy (CST). In this
-              article, we will delve into the intricacies of CST, exploring its
-              principles, benefits, and how it can enhance your overall
-              well-being.
+              Craniosacral Therapy is a gentle, non-invasive approach that can
+              have profound effects on your overall well-being. By working with
+              the subtle movements of the craniosacral system, CST supports the
+              body's natural healing abilities, promotes relaxation, and
+              enhances physical and emotional balance. If you're seeking a
+              holistic therapy to complement your health and wellness journey,
+              Craniosacral Therapy may be an excellent choice for you. Reach out
+              to CST today to book a session and experience the benefits
+              firsthand.
             </p>
           </div>
         </div>

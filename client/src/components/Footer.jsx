@@ -66,7 +66,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          HealthBooker © {new Date().getFullYear()}
+          CST Healing © {new Date().getFullYear()}
         </div>
       </footer>
     </>
