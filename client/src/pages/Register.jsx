@@ -90,10 +90,7 @@ function Register() {
     <section className="register-section flex-center">
       <div className="register-container flex-center">
         <h2 className="form-heading">Sign Up</h2>
-        <form
-          onSubmit={formSubmit}
-          className="register-form"
-        >
+        <form onSubmit={formSubmit} className="register-form">
           <input
             type="text"
             name="firstname"
@@ -151,10 +148,7 @@ function Register() {
         </form>
         <p>
           Already a user?{" "}
-          <NavLink
-            className="login-link"
-            to={"/login"}
-          >
+          <NavLink className="login-link" to={"/login"}>
             Log in
           </NavLink>
         </p>

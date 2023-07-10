@@ -70,17 +70,17 @@ const Appointments = () => {
           <h2 className="page-heading">Your Appointments</h2>
 
           {appointments.length > 0 ? (
-            <div className="appointments">
+            <div className="user-container ">
               <table>
                 <thead>
                   <tr>
-                    <th>S.No</th>
-                    <th>Doctor</th>
-                    <th>Patient</th>
-                    <th>Appointment Date</th>
-                    <th>Appointment Time</th>
-                    <th>Booking Date</th>
-                    <th>Booking Time</th>
+                    <th>S.No &nbsp;</th>
+                    <th>Doctor &nbsp;</th>
+                    <th>Patient &nbsp; </th>
+                    <th> &nbsp; &nbsp;Appointment Date &nbsp;</th>
+                    <th>Appointment Time &nbsp;</th>
+                    <th>Booking Date &nbsp;</th>
+                    <th>Booking Time &nbsp;</th>
                     <th>Status</th>
                     {userId === appointments[0].doctorId?._id ? (
                       <th>Action</th>
@@ -95,10 +95,14 @@ const Appointments = () => {
                       <tr key={ele?._id}>
                         <td>{i + 1}</td>
                         <td>
-                          {ele?.doctorId?.firstname + " " + ele?.doctorId?.lastname}
+                          {ele?.doctorId?.firstname +
+                            " " +
+                            ele?.doctorId?.lastname}
                         </td>
                         <td>
-                          {ele?.userId?.firstname + " " + ele?.userId?.lastname}
+                          {ele?.userId?.firstname +
+                            "    " +
+                            ele?.userId?.lastname}
                         </td>
                         <td>{ele?.date}</td>
                         <td>{ele?.time}</td>
