@@ -22,10 +22,7 @@ function App() {
       <Toaster />
       <Suspense fallback={<Loading />}>
         <Routes>
-          <Route
-            path="/login"
-            element={<Login />}
-          />
+          <Route path="/login" element={<Login />} />
           <Route
             path="/register"
             element={
@@ -34,14 +31,8 @@ function App() {
               </Public>
             }
           />
-          <Route
-            path="/"
-            element={<Home />}
-          />
-          <Route
-            path="/doctors"
-            element={<Doctors />}
-          />
+          <Route path="/" element={<Home />} />
+          <Route path="/doctors" element={<Doctors />} />
           <Route
             path="/appointments"
             element={
@@ -106,10 +97,7 @@ function App() {
               </Protected>
             }
           />
-          <Route
-            path="*"
-            element={<Error />}
-          />
+          <Route path="*" element={<Error />} />
         </Routes>
       </Suspense>
     </Router>

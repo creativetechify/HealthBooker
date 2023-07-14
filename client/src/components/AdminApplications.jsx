@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "../styles/user.css";
 import axios from "axios";
 import toast from "react-hot-toast";
 import Loading from "./Loading";
@@ -7,6 +6,7 @@ import { setLoading } from "../redux/reducers/rootSlice";
 import { useDispatch, useSelector } from "react-redux";
 import Empty from "./Empty";
 import fetchData from "../helper/apiCall";
+import "../styles/user.css";
 
 axios.defaults.baseURL = process.env.REACT_APP_SERVER_DOMAIN;
 

@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import jwt_decode from "jwt-decode";
 import axios from "axios";
 import toast from "react-hot-toast";
+import "../styles/user.css";
 
 const Appointments = () => {
   const [appointments, setAppointments] = useState([]);
@@ -70,17 +71,17 @@ const Appointments = () => {
           <h2 className="page-heading">Your Appointments</h2>
 
           {appointments.length > 0 ? (
-            <div className="user-container ">
+            <div className="appointments">
               <table>
                 <thead>
                   <tr>
-                    <th>S.No &nbsp;</th>
-                    <th>Doctor &nbsp;</th>
-                    <th>Patient &nbsp; </th>
-                    <th> &nbsp; &nbsp;Appointment Date &nbsp;</th>
-                    <th>Appointment Time &nbsp;</th>
-                    <th>Booking Date &nbsp;</th>
-                    <th>Booking Time &nbsp;</th>
+                    <th>S.No</th>
+                    <th>Doctor</th>
+                    <th>Patient</th>
+                    <th>Appointment Date</th>
+                    <th>Appointment Time</th>
+                    <th>Booking Date</th>
+                    <th>Booking Time</th>
                     <th>Status</th>
                     {userId === appointments[0].doctorId?._id ? (
                       <th>Action</th>
@@ -100,9 +101,7 @@ const Appointments = () => {
                             ele?.doctorId?.lastname}
                         </td>
                         <td>
-                          {ele?.userId?.firstname +
-                            "    " +
-                            ele?.userId?.lastname}
+                          {ele?.userId?.firstname + " " + ele?.userId?.lastname}
                         </td>
                         <td>{ele?.date}</td>
                         <td>{ele?.time}</td>

@@ -29,7 +29,7 @@ const Navbar = () => {
     <header>
       <nav className={iconActive ? "nav-active" : ""}>
         <h2 className="nav-logo">
-          <NavLink to={"/"}>CST HEALING</NavLink>
+          <NavLink to={"/"}>HealthBooker</NavLink>
         </h2>
         <ul className="nav-links">
           <li>
