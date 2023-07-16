@@ -22,10 +22,10 @@ const HomeCircles = () => {
         <span className="circle-name">
           Satisfied
           <br />
-          Patients
+          Clients
         </span>
       </div>
-      <div className="circle">
+      {/* <div className="circle">
         <CountUp
           start={0}
           end={250}
@@ -64,7 +64,7 @@ const HomeCircles = () => {
           <br />
           Doctors
         </span>
-      </div>
+      </div> */}
     </section>
   );
 };

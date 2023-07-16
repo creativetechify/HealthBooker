@@ -1,6 +1,14 @@
 import React from "react";
 import "../styles/footer.css";
-import { FaFacebookF, FaYoutube, FaInstagram } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaYoutube,
+  FaInstagram,
+  FaWhatsapp,
+  FaPhone,
+  FaMailchimp,
+} from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
 import { HashLink } from "react-router-hash-link";
 import { NavLink } from "react-router-dom";
 
@@ -64,7 +72,32 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          <br />
+          &nbsp;
+          <div className="social">
+            <div className="">
+              <h3>For Appointments/Registrations</h3>
+              <ul>
+                <li className="whatsapp">
+                  <a href="#" target={"_blank"} rel="noreferrer">
+                    <FaWhatsapp />
+                  </a>
+                </li>
+                <font className="social">+91 9812038573 [Call/Whatsapp]</font>
+              </ul>
+            </div>
+            <br />
+            <div>
+              <ul>
+                <li className="mail">
+                  <AiOutlineMail />
+                </li>
+                <font className="social">dsmuchhal@yahoo.com</font>
+              </ul>
+            </div>
+          </div>
         </div>
+
         <div className="footer-bottom">
           CST Healing © {new Date().getFullYear()}
         </div>
