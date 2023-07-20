@@ -21,22 +21,17 @@ const Footer = () => {
             <h3>Links</h3>
             <ul>
               <li>
-                <NavLink to={"/"}>Home</NavLink>
+                <NavLink to={"/doctors"}>CST Expert</NavLink>
               </li>
               <li>
-                <NavLink to={"/doctors"}>Doctors</NavLink>
+                <HashLink to={"/policy"}>Policy</HashLink>
               </li>
-              <li>
-                <NavLink to={"/appointments"}>Appointments</NavLink>
-              </li>
-              <li>
-                <NavLink to={"/notifications"}>Notifications</NavLink>
-              </li>
+
               <li>
                 <HashLink to={"/#contact"}>Contact Us</HashLink>
               </li>
               <li>
-                <NavLink to={"/profile"}>Profile</NavLink>
+                <NavLink to={"/feedback"}>Feedback form</NavLink>
               </li>
             </ul>
           </div>

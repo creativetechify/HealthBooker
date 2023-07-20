@@ -3,6 +3,8 @@ import { NavLink, useNavigate } from "react-router-dom";
 import "../styles/register.css";
 import axios from "axios";
 import toast from "react-hot-toast";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 axios.defaults.baseURL = process.env.REACT_APP_SERVER_DOMAIN;
 
@@ -87,73 +89,90 @@ function Register() {
   };
 
   return (
-    <section className="register-section flex-center">
-      <div className="register-container flex-center">
-        <h2 className="form-heading">Sign Up</h2>
-        <form onSubmit={formSubmit} className="register-form">
-          <input
-            type="text"
-            name="firstname"
-            className="form-input"
-            placeholder="Enter your first name"
-            value={formDetails.firstname}
-            onChange={inputChange}
-          />
-          <input
-            type="text"
-            name="lastname"
-            className="form-input"
-            placeholder="Enter your last name"
-            value={formDetails.lastname}
-            onChange={inputChange}
-          />
-          <input
-            type="email"
-            name="email"
-            className="form-input"
-            placeholder="Enter your email"
-            value={formDetails.email}
-            onChange={inputChange}
-          />
-          <input
-            type="file"
-            onChange={(e) => onUpload(e.target.files[0])}
-            name="profile-pic"
-            id="profile-pic"
-            className="form-input"
-          />
-          <input
-            type="password"
-            name="password"
-            className="form-input"
-            placeholder="Enter your password"
-            value={formDetails.password}
-            onChange={inputChange}
-          />
-          <input
-            type="password"
-            name="confpassword"
-            className="form-input"
-            placeholder="Confirm your password"
-            value={formDetails.confpassword}
-            onChange={inputChange}
-          />
-          <button
-            type="submit"
-            className="btn form-btn"
-            disabled={loading ? true : false}
-          >
-            sign up
-          </button>
-        </form>
-        <p>
-          Already a user?{" "}
-          <NavLink className="login-link" to={"/login"}>
-            Log in
-          </NavLink>
-        </p>
-      </div>
-    </section>
+    <>
+      <Navbar />
+      <section className="register-section flex-center">
+        <div className="register-container flex-center">
+          <h3 className="form-heading">Sign Up</h3>
+          <form onSubmit={formSubmit} className="register-form">
+            <tr>
+              <input
+                type="text"
+                name="firstname"
+                className="form-input"
+                placeholder="First Name"
+                value={formDetails.firstname}
+                onChange={inputChange}
+              />
+              <input
+                type="text"
+                name="lastname"
+                className="form-input"
+                placeholder="Last Name"
+                value={formDetails.lastname}
+                onChange={inputChange}
+              />
+            </tr>
+
+            <input
+              type="email"
+              name="email"
+              className="form-input"
+              placeholder="Enter your email"
+              value={formDetails.email}
+              onChange={inputChange}
+            />
+            <input
+              type="phone"
+              name="phone"
+              className="form-input"
+              placeholder="Enter your mobile"
+              value={formDetails.mobile}
+              onChange={inputChange}
+            />
+            <input
+              type="file"
+              onChange={(e) => onUpload(e.target.files[0])}
+              name="profile-pic"
+              id="profile-pic"
+              className="form-input"
+            />
+            <tr>
+              <input
+                type="password"
+                name="password"
+                className="form-input"
+                placeholder="Enter your password"
+                value={formDetails.password}
+                onChange={inputChange}
+              />
+              <input
+                type="password"
+                name="confpassword"
+                className="form-input"
+                placeholder="Confirm your password"
+                value={formDetails.confpassword}
+                onChange={inputChange}
+              />
+            </tr>
+            <button
+              type="submit"
+              className="btn form-btn"
+              disabled={loading ? true : false}
+            >
+              sign up
+            </button>
+          </form>
+          <p>
+            Already a user?{" "}
+            <NavLink className="login-link" to={"/login"}>
+              Log in
+            </NavLink>
+          </p>
+        </div>
+      </section>
+      <Footer />{" "}
+    </>
   );
 }
 

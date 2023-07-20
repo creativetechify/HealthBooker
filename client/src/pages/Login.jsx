@@ -7,6 +7,8 @@ import { useDispatch } from "react-redux";
 import { setUserInfo } from "../redux/reducers/rootSlice";
 import jwt_decode from "jwt-decode";
 import fetchData from "../helper/apiCall";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 axios.defaults.baseURL = process.env.REACT_APP_SERVER_DOMAIN;
 
@@ -67,47 +69,42 @@ function Login() {
   };
 
   return (
-    <section className="register-section flex-center">
-      <div className="register-container flex-center">
-        <h2 className="form-heading">Sign In</h2>
-        <form
-          onSubmit={formSubmit}
-          className="register-form"
-        >
-          <input
-            type="email"
-            name="email"
-            className="form-input"
-            placeholder="Enter your email"
-            value={formDetails.email}
-            onChange={inputChange}
-          />
-          <input
-            type="password"
-            name="password"
-            className="form-input"
-            placeholder="Enter your password"
-            value={formDetails.password}
-            onChange={inputChange}
-          />
-          <button
-            type="submit"
-            className="btn form-btn"
-          >
-            sign in
-          </button>
-        </form>
-        <p>
-          Not a user?{" "}
-          <NavLink
-            className="login-link"
-            to={"/register"}
-          >
-            Register
-          </NavLink>
-        </p>
-      </div>
-    </section>
+    <>
+      <Navbar />
+      <section className="register-section flex-center">
+        <div className="register-container flex-center">
+          <h2 className="form-heading">Sign In</h2>
+          <form onSubmit={formSubmit} className="register-form">
+            <input
+              type="email"
+              name="email"
+              className="form-input"
+              placeholder="Enter your email"
+              value={formDetails.email}
+              onChange={inputChange}
+            />
+            <input
+              type="password"
+              name="password"
+              className="form-input"
+              placeholder="Enter your password"
+              value={formDetails.password}
+              onChange={inputChange}
+            />
+            <button type="submit" className="btn form-btn">
+              sign in
+            </button>
+          </form>
+          <p>
+            Not a user?{" "}
+            <NavLink className="login-link" to={"/register"}>
+              Register
+            </NavLink>
+          </p>
+        </div>
+      </section>
+      <Footer />{" "}
+    </>
   );
 }
 

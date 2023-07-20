@@ -28,6 +28,10 @@ const DoctorCard = ({ ele }) => {
       <h3 className="card-name">
         Mr. {ele?.userId?.firstname + " " + ele?.userId?.lastname}
       </h3>
+      <p className="certification">
+        <strong>Certification: </strong>
+        {ele?.certification}
+      </p>
       <p className="specialization">
         <strong>Specialization: </strong>
         {ele?.specialization}
@@ -36,13 +40,18 @@ const DoctorCard = ({ ele }) => {
         <strong>Experience: </strong>
         {ele?.experience}yrs
       </p>
-      <p className="fees">
-        <strong>Fees per consultation: </strong>₹ {ele?.fees}
-      </p>
       <p className="phone">
         <strong>Phone: </strong>
         {ele?.userId?.mobile}
       </p>
+      <p className="fees">
+        <strong>Fees per consultation: </strong>₹ {ele?.fees}
+      </p>
+      <p className="timing1">
+        <strong>Session Duration: </strong>
+        {ele?.timing1}
+      </p>
+
       <button className="btn appointment-btn" onClick={handleModal}>
         Book Appointment
       </button>

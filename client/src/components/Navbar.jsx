@@ -36,7 +36,7 @@ const Navbar = () => {
             <NavLink to={"/"}>Home</NavLink>
           </li>
           <li>
-            <NavLink to={"/doctors"}>Doctors</NavLink>
+            <NavLink to={"/doctors"}>CST Expert</NavLink>
           </li>
           {token && user.isAdmin && (
             <li>

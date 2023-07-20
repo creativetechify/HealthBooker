@@ -6,6 +6,7 @@ const Contact = () => {
     name: "",
     email: "",
     message: "",
+    phone: "",
   });
 
   const inputChange = (e) => {
@@ -39,6 +40,14 @@ const Contact = () => {
             className="form-input"
             placeholder="Enter your email"
             value={formDetails.email}
+            onChange={inputChange}
+          />
+          <input
+            type="phone"
+            name="phone"
+            className="form-input"
+            placeholder="Enter your Mobile No"
+            value={formDetails.phone}
             onChange={inputChange}
           />
           <textarea

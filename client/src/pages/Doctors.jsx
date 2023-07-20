@@ -31,16 +31,11 @@ const Doctors = () => {
       {loading && <Loading />}
       {!loading && (
         <section className="container doctors">
-          <h2 className="page-heading">Our Doctors</h2>
+          <h3 className="page-heading">CST Expert</h3>
           {doctors.length > 0 ? (
             <div className="doctors-card-container">
               {doctors.map((ele) => {
-                return (
-                  <DoctorCard
-                    ele={ele}
-                    key={ele._id}
-                  />
-                );
+                return <DoctorCard ele={ele} key={ele._id} />;
               })}
             </div>
           ) : (
