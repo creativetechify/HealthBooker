@@ -166,7 +166,7 @@ function Register() {
           <p>
             Already a user?{" "}
             <NavLink className="login-link" to={"/login"}>
-              Log in
+              Register
             </NavLink>
           </p>
         </div>
