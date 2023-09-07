@@ -78,7 +78,7 @@ function Register() {
           pic: file,
         }),
         {
-          pending: "Registering user...",
+          pending: "Registering user....",
           success: "User registered successfully",
           error: "Unable to register user",
           loading: "Registering user...",
