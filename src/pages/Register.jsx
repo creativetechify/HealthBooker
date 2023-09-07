@@ -44,7 +44,7 @@ function Register() {
       setLoading(false);
     } else {
       setLoading(false);
-      toast.error("Please select an image in jpeg/jpg or png format");
+      toast.error("Please select an image in jpeg or png format");
     }
   };
 
