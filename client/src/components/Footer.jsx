@@ -26,6 +26,9 @@ const Footer = () => {
               <li>
                 <HashLink to={"/policy"}>Policy</HashLink>
               </li>
+              <li>
+                <HashLink to={"/cstdetail"}>Know about CST</HashLink>
+              </li>
 
               <li>
                 <HashLink to={"/#contact"}>Contact Us</HashLink>
@@ -89,19 +92,12 @@ const Footer = () => {
                 </li>
                 <font className="social">dsmuchhal@yahoo.com</font>
               </ul>
-              <br />
-              <ul>
-                <li className="mail">
-                  <AiOutlineMail />
-                </li>
-                <font className="social">support@cstmagicalhealing.com</font>
-              </ul>
             </div>
           </div>
         </div>
 
         <div className="footer-bottom">
-          CST Magical Healing © {new Date().getFullYear()}
+          CST Healing © {new Date().getFullYear()}
         </div>
       </footer>
     </>

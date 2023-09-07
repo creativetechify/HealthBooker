@@ -9,6 +9,8 @@ import Loading from "./components/Loading";
 import Policy from "./components/Policy";
 import Feedbackf from "./pages/Feedbackf";
 
+import Cstdetail from "./pages/Cstdetail";
+
 const Home = lazy(() => import("./pages/Home"));
 const Dashboard = lazy(() => import("./pages/Dashboard"));
 const Appointments = lazy(() => import("./pages/Appointments"));
@@ -37,6 +39,7 @@ function App() {
           <Route path="/doctors" element={<Doctors />} />
           <Route path="/policy" element={<Policy />} />
           <Route path="/feedback" element={<Feedbackf />} />
+          <Route path="/Cstdetail" element={<Cstdetail />} />
           <Route
             path="/appointments"
             element={
@@ -61,11 +64,20 @@ function App() {
               </Protected>
             }
           />
+         
           <Route
             path="/feedback"
             element={
               <Protected>
                 <Feedbackf />
+              </Protected>
+            }
+          />
+           <Route
+            path="/cstdetail"
+            element={
+              <Protected>
+                <Cstdetail />
               </Protected>
             }
           />

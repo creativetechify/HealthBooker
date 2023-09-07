@@ -22,15 +22,10 @@ const Contact = () => {
       <div className="contact-container flex-center contact">
         <h2 className="form-heading">Contact Us</h2>
         <form
-          action="https://api.web3forms.com/submit"
+          action="https://formsubmit.co/learnwithfun4567@gmail.com"
           method="POST"
           className="register-form "
         >
-          <input
-            type="hidden"
-            name="access_key"
-            value="e702f7a9-c07e-410f-841c-0af681034a3d"
-          />
           <input
             type="text"
             name="name"
@@ -62,7 +57,7 @@ const Contact = () => {
             placeholder="Enter your message"
             value={formDetails.message}
             onChange={inputChange}
-            rows="4"
+            rows="8"
             cols="12"
           ></textarea>
 

@@ -3,7 +3,6 @@ import "../styles/bookappointment.css";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { IoMdClose } from "react-icons/io";
-import PaymentComponent from "./PaymentComponent"; // Import the PaymentComponent
 
 const BookAppointment = ({ setModalOpen, ele }) => {
   const [formDetails, setFormDetails] = useState({
@@ -84,13 +83,6 @@ const BookAppointment = ({ setModalOpen, ele }) => {
                 book
               </button>
             </form>
-            {/* Render the PaymentComponent */}
-            <a
-              href="https://buy.stripe.com/test_28o5nPb4S0kiaCk288"
-              className="btn form-btn"
-            >
-              Pay Now
-            </a>
           </div>
         </div>
       </div>

@@ -78,7 +78,7 @@ function Register() {
           pic: file,
         }),
         {
-          pending: "Registering user...",
+          pending: "Registering user....",
           success: "User registered successfully",
           error: "Unable to register user",
           loading: "Registering user...",
@@ -103,6 +103,8 @@ function Register() {
                 placeholder="First Name"
                 value={formDetails.firstname}
                 onChange={inputChange}
+                required={true}
+              
               />
               <input
                 type="text"
@@ -111,6 +113,7 @@ function Register() {
                 placeholder="Last Name"
                 value={formDetails.lastname}
                 onChange={inputChange}
+                required={true}
               />
             </tr>
 
@@ -121,6 +124,7 @@ function Register() {
               placeholder="Enter your email"
               value={formDetails.email}
               onChange={inputChange}
+              required={true}
             />
             <input
               type="phone"
@@ -129,6 +133,7 @@ function Register() {
               placeholder="Enter your mobile"
               value={formDetails.mobile}
               onChange={inputChange}
+              required={true}
             />
             <input
               type="file"
@@ -145,6 +150,7 @@ function Register() {
                 placeholder="Enter your password"
                 value={formDetails.password}
                 onChange={inputChange}
+                required={true}
               />
               <input
                 type="password"
@@ -153,6 +159,7 @@ function Register() {
                 placeholder="Confirm your password"
                 value={formDetails.confpassword}
                 onChange={inputChange}
+                required={true}
               />
             </tr>
             <button
@@ -166,7 +173,7 @@ function Register() {
           <p>
             Already a user?{" "}
             <NavLink className="login-link" to={"/login"}>
-              Register
+              Log in
             </NavLink>
           </p>
         </div>

@@ -2,7 +2,6 @@ import "../styles/doctorcard.css";
 import React, { useState } from "react";
 import BookAppointment from "../components/BookAppointment";
 import { toast } from "react-hot-toast";
-import { NavLink, useNavigate } from "react-router-dom";
 
 const DoctorCard = ({ ele }) => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -57,19 +56,6 @@ const DoctorCard = ({ ele }) => {
         Book Appointment
       </button>
       {modalOpen && <BookAppointment setModalOpen={setModalOpen} ele={ele} />}
-
-      <p>
-        Not a Client?{" "}
-        <NavLink className="login-link" to={"/register"}>
-          Register
-        </NavLink>
-      </p>
-      <p>
-        Already a Client?{" "}
-        <NavLink className="login-link" to={"/login"}>
-          Log in
-        </NavLink>
-      </p>
     </div>
   );
 };
