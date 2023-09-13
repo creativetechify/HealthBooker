@@ -1,6 +1,4 @@
-
-
-.Youtube1{
+.Youtube1 {
   display: flex;
   height: 90vh;
   width: 80%;
@@ -10,34 +8,18 @@
   justify-content: space-between;
 }
 
-
-
 .App {
-    font-family: sans-serif;
-    text-align:justify;
-   columns: 2;
-   margin-left: 10px;
-   margin-right: 10px;
-   margin-top: 30px;
-  }
-  
-  .video-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position:relative;
-    height: 0;
-  }
-  
-  .video-responsive iframe {
-    
-   
-    left: 0;
-    top: 0;
-   
-   
-    height: 315;
-    width: 420;
-    position:absolute
-  }
-  
-  
+  font-family: sans-serif;
+  text-align: justify;
+  columns: 2;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+
+.video-responsive {
+  /* overflow: hidden; */
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
