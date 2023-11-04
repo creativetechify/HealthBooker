@@ -1,5 +1,6 @@
 import "./styles/app.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Elements } from "react-stripe-elements";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import { Toaster } from "react-hot-toast";
@@ -64,7 +65,7 @@ function App() {
               </Protected>
             }
           />
-         
+
           <Route
             path="/feedback"
             element={
@@ -73,7 +74,7 @@ function App() {
               </Protected>
             }
           />
-           <Route
+          <Route
             path="/cstdetail"
             element={
               <Protected>
